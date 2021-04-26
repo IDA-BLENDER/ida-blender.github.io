@@ -18,8 +18,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%; */
+
+    width: 76.92% !important;
+    height: 76.92% !important;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
   }
 
   .wrap {
@@ -27,6 +34,8 @@
     position: relative;
     left: 50%;
 }
+
+
 
 .content {
     float: left;
@@ -51,10 +60,31 @@ span.zoomlink {
             height: 50px;
             width: 100px;
 }
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
 </style>
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
-  <div class="w3-half w3-black w3-container w3-center" style="height:800px">
+  <div class="w3-half w3-black w3-container w3-center" style="height:900px">
     <div class="w3-padding-32">
             <button onclick="location.href='https://discord.gg/HSZBzCTK';"><span class="discordlink"></span></button>
             <button onclick="location.href='https://hslu.zoom.us/j/66293174157?pwd=WGE2dzJ3NmJjc2xVL09BVVhROVgydz09';"><span class="zoomlink"></span></button>
@@ -75,7 +105,7 @@ span.zoomlink {
   </div>
   
   
-  <div class="w3-half w3-blue-grey w3-container" style="height:800px" id="day1">
+  <div class="w3-half w3-blue-grey w3-container" style="height:900px" id="day1">
     <div class="w3-padding-64 w3-center">
         <h3>THU - 22.04</h3>
       <h1>3D & Blender Fundamentals</h1>
@@ -104,8 +134,8 @@ span.zoomlink {
         
         <p><a href="https://docs.blender.org/manual/en/latest/interface/keymap/blender_default.html">Blender Keymap Overview</a></p>
         <p><a href="https://www.youtube.com/watch?v=MF1qEhBSfq4&list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6">Intro To Blender Video Playlist</a></p>
-        <p><a href="https://www.youtube.com/watch?v=TPrnSACiTJ4&list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U">Blender Guru<a></p>
-        <p><a href="https://www.youtube.com/watch?v=aix1L4FQOvM&list=PLxVAs8AY4TgdR1TZGkBAsrmBSg7t-lg1S">Blender Tutorials auf Deutsch!!!<a></p>
+        <p><a href="https://www.youtube.com/watch?v=TPrnSACiTJ4&list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U">Blender Guru</a></p>
+        <p><a href="https://www.youtube.com/watch?v=aix1L4FQOvM&list=PLxVAs8AY4TgdR1TZGkBAsrmBSg7t-lg1S">Blender Tutorials auf Deutsch!!!</a></p>
     </details>
       
       </div>
@@ -117,7 +147,7 @@ span.zoomlink {
 <!-- SECOND ROW -->
 
 <div class="w3-row">
-    <div class="w3-half w3-dark-grey w3-container" style="height:800px" id="day2">
+    <div class="w3-half w3-dark-grey w3-container" style="height:900px" id="day2">
         <div class="w3-padding-64 w3-center">
             <h3>THU - 29.04</h3>
           <h1>3D MODELING METHODS + SHADING & TEXTURING</h1>
@@ -127,20 +157,84 @@ span.zoomlink {
           <iframe width="560" height="315" src="https://www.youtube.com/embed/YRJbhe0HIQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div> -->
         <br>
-          <details>
-              <summary style="font-size: 18;font-weight: 900;">
-                DOWNLOAD LINKS
-            </summary>
-            <!--
-            <p><a href="https://www.blender.org/download/">Download Blender</a></p>
-            <p><a href="https://www.dropbox.com/t/RnczFDVBI7csAe8i">Download Blender Addon Bundle</a></p>
-            -->
+        <details>
+        <summary style="font-size: 18;font-weight: 900;">
+            ZOOM SESSION AUFNAHME
+        </summary>
+       <!--
+        <p><a href="https://www.blender.org/download/">Download Blender</a></p>
+        <p><a href="https://www.dropbox.com/t/RnczFDVBI7csAe8i">Download Blender Addon Bundle</a></p>
+       -->
+      </details>
+      <br>
+      <details>
+        <summary style="font-size: 18;font-weight: 900;"> DOWNLOAD LINKS </summary>
+      
+             <details>
+                <summary> SOFTWARE & PLUGINS </summary>
+              <p><a href="https://exoside.com/quadremesher/quadremesher-download/">Download Quad Remesher (Trial 30d)</a></p>
+              <p><a href="https://github.com/wjakob/instant-meshes">Download Instant Meshes</a></p>
+              <p><a href="https://www.dropbox.com/t/4Fxe8Aha5p6TYMhL">Download Simple Bake Plugin</a></p>
+              </details> 
+
+              <details>
+                <summary> Free Blender 3D-Models </summary>
+                  <p><a href="https://www.blender-models.com/model-download/">blender-models.com</a></p>
+              </details>
+
+              <details>
+                <summary> Free Textures & Shaders </summary>
+                  <p><a href="https://texturehaven.com/">Free Textures (Textureheaven)</a></p>
+                  <p><a href="https://simonthommes.artstation.com/albums/1387554">Free Procedural Shaders by genius Simon Thommes</a></p>
+              </details>
+
         </details>
             <br>
           <details>  
             <summary style="font-size: 18;font-weight: 900;">
                 TUTORIALS & MANUALS
             </summary>
+            <details>
+              <summary> 3D Modeling, Sculpting, Retopo & UV-Layouts</summary>
+              <details>  
+              <summary>Modeling</summary>
+                <p><a href="https://www.youtube.com/watch?v=OlnkGCdtGEw">Low Poly Modeling</a></p>
+                <p><a href="https://www.youtube.com/watch?v=8DVB1uGItrk">Booleans</a></p>
+              </details>
+              <details>
+                <summary>Sculpting</summary>
+                <p><a href="https://www.youtube.com/watch?v=7EJRlWitYmo">Sculpting with Skin Modifier</a></p>
+                <p><a href="https://www.youtube.com/watch?v=tQfFlzHJJ88">Sculpting Advanced</a></p>
+              </details>
+              <details>
+                <summary>Retopo</summary>
+                <p><a href="https://www.youtube.com/watch?v=X8kQiccJetw">Retopoflow</a></p>
+                <p><a href="https://www.youtube.com/watch?v=hu4NavAy5f4">Using Instameshes</a></p>
+              </details>
+              <details>
+                <summary>UV-Layout</summary>
+                <p><a href="https://www.youtube.com/watch?v=XeBUfMKKZDo">UV-Unwrapping</a></p>
+              </details>
+            </details>
+            <details>
+              <summary> Texturing, Shading & Mapbaking </summary>
+              <details>
+              <summary>Texturing</summary>
+                <p><a href="https://www.youtube.com/watch?v=u9nE2Xg6Jgk">Painting Textures</a></p>
+                <p><a href="https://www.youtube.com/watch?v=XI-pZshRp8g">Texturing PBR Shader Setup</a></p>
+              </details>
+              <details>
+              <summary>Shading</summary>
+                <p><a href="https://www.youtube.com/watch?v=_deRNqDcwRk">Procedural Textures Basics</a></p>
+                <p><a href="https://www.youtube.com/watch?v=EbAdconaRJo">Procedural Wood</a></p>
+                <p><a href="https://www.youtube.com/watch?v=QZiVXcrsvPM">Procedural Shading in 10 min</a></p>
+              </details>
+              <details>
+              <summary>Baking</summary>
+                <p><a href="https://www.youtube.com/watch?v=Yvt7sBjfc-o">Baking Details</a></p>
+                <p><a href="https://www.youtube.com/watch?v=uTycGpuYlpI">Simple Bake Addon Workflow</a></p>
+              </details>
+            </details>
             <!--
             <p><a href="https://docs.blender.org/manual/en/latest/interface/keymap/blender_default.html">Blender Keymap Overview</a></p>
             <p><a href="https://www.youtube.com/watch?v=MF1qEhBSfq4&list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6">Intro To Blender Video Playlist</a></p>
@@ -153,7 +247,7 @@ span.zoomlink {
 
 
     
-    <div class="w3-half w3-light-grey w3-container" style="height:800px" id="day3">
+    <div class="w3-half w3-light-grey w3-container" style="height:900px" id="day3">
       <div class="w3-padding-64 w3-center">
           <h3>WED - 12.05</h3>
         <h1>RIGGING & ANIMATIONS FOR GAMES 1</h1>
@@ -193,7 +287,7 @@ span.zoomlink {
 <!-- THIRD ROW -->
 
 <div class="w3-row">
-    <div class="w3-half w3-blue-grey w3-container" style="height:800px" id="day4">
+    <div class="w3-half w3-blue-grey w3-container" style="height:900px" id="day4">
         <div class="w3-padding-64 w3-center">
             <h3>WED - 19.05</h3>
           <h1>RIGGING & ANIMATIONS FOR GAMES 2</h1>
@@ -229,7 +323,7 @@ span.zoomlink {
 
 
     
-    <div class="w3-half w3-dark-grey w3-container" style="height:800px" id="day5">
+    <div class="w3-half w3-dark-grey w3-container" style="height:900px" id="day5">
       <div class="w3-padding-64 w3-center">
           <h3>WED - 26.05</h3>
         <h1>EXPORT & AUTOMATION PRACTICES</h1>
@@ -269,7 +363,7 @@ span.zoomlink {
 <!-- THIRD ROW -->
 
 <div class="w3-row">
-    <div class="w3-half w3-green-grey w3-container" style="height:800px" id="day6">
+    <div class="w3-half w3-green-grey w3-container" style="height:900px" id="day6">
         <div class="w3-padding-64 w3-center">
             <h3>WED - 02.06</h3>
           <h1>REVISION & SUPPORT</h1>
